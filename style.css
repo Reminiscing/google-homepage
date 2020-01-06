@@ -41,17 +41,20 @@ h1 {
 
 .search-bar {
    position: absolute;
-   top: 48%;
+   top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
 }
 .search-bar1 {
     margin: 0 auto;
-    padding: 5px 20px 5px 20px; 
-    border-radius: 20px;
-    width: 586px;
-    border: 1px solid rgb(196, 196, 196);
+    margin-bottom: 35px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 450px;
+    border: 1px solid rgba(196, 196, 196, 0.267);
+    /* border: none; */
     font-size: 1.3rem;
+    box-shadow: -5px 10px 20px -10px rgba(163, 163, 163, 0.75);
 }
 
 .search-bar1:focus {
@@ -70,9 +73,10 @@ h1 {
 
 
 .search-buttons a {
-    padding: 12px 15px;
+    padding: 10px 12px;
     margin: 5px;
     border-radius: 5px;
     background-color:#F5F5F5;
     color: rgb(107, 107, 107);
+    font-size: 0.85rem;
 }
