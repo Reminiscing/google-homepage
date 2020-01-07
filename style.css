@@ -1,21 +1,45 @@
 * {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: rgb(63, 63, 63);
 }
 
+.top-nav_left, .top-nav_right, footer {
+    /* margin-top: 10px; */
+    font-size: .8rem;
+    padding: 15px 20px;
+}
+
+.top-nav_left a, .top-nav_right a {
+    padding: 0 8px;
+}
+
+.top-nav_left a:hover, .top-nav_right a:hover {
+    text-decoration: underline;
+}
+
+.top-nav_left {
+    float: left;
+}
+
+.top-nav_right {
+    float: right;
+    margin-right: 50px;
+}
 
 .header {
     position: absolute;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
 }
+
 
 h1 {
     font-size: 5rem;
@@ -23,7 +47,7 @@ h1 {
 }
 /* Google logo colors */
 
-.g, .g-lower {
+/* .g, .g-lower {
     color: #4185F4;
 }
 
@@ -37,6 +61,14 @@ h1 {
 
 .l {
     color: #33A853;
+} */
+
+.search-icon {
+    position: absolute;
+    top: 18%;
+    right: 92%;
+    height: 20px;
+    fill: rgb(112, 112, 112);
 }
 
 .search-bar {
@@ -46,19 +78,23 @@ h1 {
    transform: translate(-50%, -50%);
 }
 .search-bar1 {
-    margin: 0 auto;
+    /* margin: 0 auto; */   
     margin-bottom: 35px;
     padding: 10px 20px;
     border-radius: 25px;
-    width: 450px;
-    border: 1px solid rgba(196, 196, 196, 0.267);
-    /* border: none; */
+    min-width: 450px;
+    border: 1px solid rgba(196, 196, 196, 0.904);
     font-size: 1.3rem;
-    box-shadow: -5px 10px 20px -10px rgba(163, 163, 163, 0.75);
+ 
 }
 
 .search-bar1:focus {
     outline: none;
+}
+
+.search-bar1:hover {
+    border: 1px solid rgba(196, 196, 196, 0.452);
+    box-shadow: -5px 10px 20px -10px rgba(163, 163, 163, 0.75);
 }
 
 
@@ -76,7 +112,28 @@ h1 {
     padding: 10px 12px;
     margin: 5px;
     border-radius: 5px;
-    background-color:#F5F5F5;
-    color: rgb(107, 107, 107);
+    background-color:rgb(236, 236, 236);
     font-size: 0.85rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 12px;
+    width: 100%;
+    background-color: #F2F2F2;
+    font-size: 0.75rem;
+}
+
+footer a {
+    padding: 0 12px;
+}
+
+.footer-nav_left {
+    float: left;
+}
+
+.footer-nav_right {
+    float: right;
+    margin-right: 3%;
 }
